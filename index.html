@@ -93,7 +93,9 @@ h2 {
 
 .main-header {
     box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
-    position: sticky;
+    /* CHANGED: Removed position: sticky to allow header to scroll off screen */
+    /* position: sticky; */ 
+    position: static; /* Use static so it flows normally */
     top: 0;
     z-index: 1000;
 }
