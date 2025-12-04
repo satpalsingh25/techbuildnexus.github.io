@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | TechBuild Nexus</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo">
+                <img src="logo.jpg" alt="TechBuild Nexus Logo" style="height: 50px;">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li class="dropdown">
+                        <a href="services.html">Services <i class="fas fa-caret-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="service-amc.html">IT AMC</a></li>
+                            <li><a href="service-consultancy.html">IT Consultancy</a></li>
+                            <li><a href="service-network.html">Network Design</a></li>
+                            <li><a href="service-cybersecurity.html">Cyber Security</a></li>
+                            <!-- Add other services here -->
+                        </ul>
+                    </li>
+                    <li><a href="products.html">Products & Licensing</a></li>
+                    <li><a href="contact.html" class="active">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section contact-page">
+            <div class="container">
+                <h2 class="text-center">Contact TechBuildNexus</h2>
+
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Our Details</h3>
+                        <p><i class="fas fa-phone"></i> **Phone:** +91-XXXXXXXXXX</p>
+                        <p><i class="fas fa-envelope"></i> **Email:** info@techbuildnexus.com</p>
+                        <p><i class="fas fa-globe"></i> **Website:** www.techbuildnexus.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> **Address:** ABC, ABC, ABC</p>
+                        
+                        <div style="margin-top: 30px;">
+                            <iframe src="https://maps.google.com/maps?q=ABC%2C%20ABC%2C%20ABC&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="250" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <h3>Submit Your Inquiry</h3>
+                        <!-- NOTE: The 'action' attribute should point to your server-side script (e.g., PHP or Node.js endpoint) to process the form data. -->
+                        <form action="submit_form.php" method="POST" class="contact-form">
+                            <input type="text" name="name" placeholder="Full Name" required>
+                            <input type="email" name="email" placeholder="Email" required>
+                            <input type="tel" name="phone" placeholder="Phone">
+                            <input type="text" name="company" placeholder="Company Name">
+                            <select name="service_required" required>
+                                <option value="">Select Service Required</option>
+                                <option value="IT AMC">IT AMC</option>
+                                <option value="IT Consultancy">IT Consultancy</option>
+                                <option value="Network Design">Network Design</option>
+                                <option value="Data Center">Data Center</option>
+                                <option value="Cyber Security">Cyber Security</option>
+                                <option value="Digital Marketing">Digital Marketing</option>
+                                <option value="Website Development">Website Development</option>
+                                <option value="Microsoft 365">Microsoft 365</option>
+                                <option value="WhatsApp API">WhatsApp API</option>
+                                <option value="IT/OT Consultancy">IT/OT Consultancy</option>
+                                <option value="App Development">App Development</option>
+                                <option value="SAP/Oracle Support">SAP/Oracle Support</option>
+                                <option value="Products & Licensing">Products & Licensing</option>
+                            </select>
+                            <textarea name="message" placeholder="Message" rows="5" required></textarea>
+                            <button type="submit" class="btn primary-btn">Submit Inquiry</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h4>TechBuild Nexus</h4>
+                <p>Connecting Business Minds</p>
+                <p>Specializing in enterprise networks, cyber security, data center design, and IT/OT industrial infrastructure.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">All Services</a></li>
+                    <li><a href="products.html">Products & Licensing</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <p><i class="fas fa-phone"></i> Phone: +91-XXXXXXXXXX</p>
+                <p><i class="fas fa-envelope"></i> Email: info@techbuildnexus.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Address: ABC, ABC, ABC</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 TechBuildNexus. All rights reserved. | <a href="www.techbuildnexus.com" target="_blank">www.techbuildnexus.com</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
